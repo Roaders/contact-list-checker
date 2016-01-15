@@ -2,10 +2,9 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "out": "app.js",
         "diagnostics": true
     },
     "files": [
-        "src/build.ts"
+        "app.ts"
     ]
 }

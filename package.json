@@ -1,0 +1,26 @@
+{
+  "name": "contact-list-checker",
+  "version": "1.0.0",
+  "description": "Tool to verify email addresses for a list of contacts",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roaders/contact-list-checker.git"
+  },
+  "keywords": [
+    "Typescript",
+    "node"
+  ],
+  "author": "Giles Roadnight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Roaders/contact-list-checker/issues"
+  },
+  "homepage": "https://github.com/Roaders/contact-list-checker",
+  "dependencies": {
+    "typescript": "^1.6.2"
+  }
+}
