@@ -10,7 +10,7 @@ To be completed
 ### In Node.js
 
 ```bash
-node checkContacts.js -inputFile.csv -outputFile.csv
+node checkContacts.js "emailColumnNameInCsvFile" -inputFile.csv -outputFile.csv
 ```
 
 ### In Browser
