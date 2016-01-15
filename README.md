@@ -10,7 +10,7 @@ To be completed
 ### In Node.js
 
 ```bash
-node checkContacts.js -i inputFile.csv -o outputFile.js
+node checkContacts.js -inputFile.csv -outputFile.csv
 ```
 
 ### In Browser
