@@ -10,13 +10,13 @@ To be completed
 ### In Node.js
 
 ```bash
-node checkContacts.js "emailColumnNameInCsvFile" -inputFile.csv -outputFile.csv
+node app.js "emailColumnNameInCsvFile" -inputFile.csv -outputFile.csv
 ```
 
 ### In Browser
 
 ```bash
-node launchContactChecker.js
+node app.js -launchServer
 ```
 
 This should launch a webpage but if not access the app at [http://localhost/index.html](http://localhost/index.html)
