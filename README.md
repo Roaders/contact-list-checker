@@ -3,7 +3,25 @@ A Node.js / Typescript app for checking all the email addresses in a contact lis
 
 ## Compilation
 
-To be completed
+Install typescript (globally)
+
+    npm install -g typescript
+
+Install tsd (globally)
+
+    npm install -g tsd
+
+install required dependencies:
+
+    npm install
+
+install Typescript declaraions:
+
+    tsd install
+
+compile the app:
+
+    tsc
 
 ## Running
 
