@@ -1,4 +1,5 @@
 src/app.js
 src/pricklythistle/contactChecker/*.js
 node_modules/
+typings/
 app.js
