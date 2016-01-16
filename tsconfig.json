@@ -5,6 +5,8 @@
         "diagnostics": true
     },
     "files": [
-        "app.ts"
+        "./app.ts",
+        "./typings/tsd.d.ts",
+        "./libs/libs.d.ts"
     ]
 }

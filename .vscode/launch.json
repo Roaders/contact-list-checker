@@ -7,7 +7,7 @@
 			"request": "launch",
 			"program": "app.js",
 			"stopOnEntry": false,
-			"args": [],
+			"args": [ "E:/dev/samples/google.csv" ],
 			"cwd": ".",
 			"runtimeExecutable": null,
 			"runtimeArgs": [
@@ -16,7 +16,7 @@
 			"env": {
 				"NODE_ENV": "development"
 			},
-			"externalConsole": false,
+			"externalConsole": true,
 			"sourceMaps": false,
 			"outDir": null
 		}
