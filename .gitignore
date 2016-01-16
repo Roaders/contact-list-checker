@@ -3,3 +3,6 @@ src/pricklythistle/contactChecker/*.js
 node_modules/
 typings/
 app.js
+src/pricklythistle/contactChecker/*.js.map
+contact-list-checker.iml
+app.js.map

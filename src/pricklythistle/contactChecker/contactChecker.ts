@@ -1,10 +1,9 @@
 
-class ContactChecker {
-    
-    constructor() {
-        console.log( "Hello ContactChecker" );
-    }
-    
-}
+import contact = require('./contactList');
 
-export = ContactChecker;
+export class ContactChecker {
+
+    checkContacts( contacts: Array<contact.IContact> ): void {
+        console.log( `Checking ${contacts.length} contacts` );
+    }
+}

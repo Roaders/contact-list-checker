@@ -2,7 +2,9 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "diagnostics": true
+        "diagnostics": true,
+        "inlineSourceMap": true,
+        "inlineSources": true
     },
     "files": [
         "./app.ts",
