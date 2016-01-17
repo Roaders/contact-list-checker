@@ -17,15 +17,14 @@ export class MailServerService implements contracts.IMailServerService{
 
         console.log( `Domain for ${email.email}: ${domain}` );
 
-        const getMxServerForDomain = Rx.Observable.fromNodeCallback<string,Array<contracts.IMailExchange>,contracts.IHasMailServer>(
+        return Rx.Observable.fromNodeCallback<string,Array<contracts.IMailExchange>,contracts.IHasMailServer>(
             dns.resolveMx,
             this,
             (results) => this.updateHasEmail( email, results )
-        );
-        return getMxServerForDomain(domain);
+        )(domain);
     }
 
-    private updateHasEmail( email: contracts.IHasEmail, mailServerResults: any[] ) : contracts.IHasMailServer {
+    private updateHasEmail( email: contracts.IHasEmail, mailServerResults: contracts.IMailExchange[] ) : contracts.IHasMailServer {
         const hasMailServer: contracts.IHasMailServer = <contracts.IHasMailServer>email;
 
         hasMailServer.mailServers = mailServerResults.map( (mailExchange) => {return mailExchange.exchange} );
