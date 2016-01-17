@@ -31,12 +31,12 @@ export class ContactChecker {
     //  Private Functions
 
     private handleContactWithMailServer( contact: contracts.IHasMailServer ): void {
-        console.log( `Contact mail server lookup complete: ${contact.email} ${contact.mailServers}` );
+        console.log( `Contact mail server lookup complete: ${contact.email} -> ${contact.mailServers}` );
         
     }
 
     private handleMailServerError( error: any ): void {
-        console.log( `Error looking up mailserver: ${error}` );
+        console.timeEnd( "resolving mail records" );
     }
 
     private handleMailServerLookupComplete(): void {

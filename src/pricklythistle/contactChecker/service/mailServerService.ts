@@ -21,8 +21,12 @@ export class MailServerService implements contracts.IMailServerService{
             dns.resolveMx,
             this,
             (results) => this.updateHasEmail( email, results )
-        )(domain).do(() =>{}, (error) => {
-            console.log( `Error getting mail server for domain ${domain} on email ${email.email}: ${error}` )
+        )(domain).do(
+            (hasMailServer) =>{
+                //console.log( `mail servers: ${hasMailServer.mailServers}` )
+            },
+            (error) => {
+                console.log( `Error getting mail server for domain ${domain} on email ${email.email}: ${error}` )
         });
     }
 
