@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="025997cb-b218-40fc-acb4-4e91b8da40da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/rx.async-lite/rx.async-lite.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/libs.d.ts" afterPath="$PROJECT_DIR$/libs/libs.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts" afterPath="$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pricklythistle/contactChecker/service/mailServerService.ts" afterPath="$PROJECT_DIR$/src/pricklythistle/contactChecker/service/mailServerService.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsd.json" afterPath="$PROJECT_DIR$/tsd.json" />
     </list>
     <ignored path="contact-list-checker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,21 +36,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mailServerService.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mailServerService.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/service/mailServerService.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43650794">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+              <folding>
+                <marker date="1453039282507" expanded="true" signature="1220:1377" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contactChecker.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5555556">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactChecker.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts">
+      <file leaf-file-name="contactList.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactList.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rx-lite.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/typings/rx/rx-lite.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -130,12 +149,12 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/app.ts" />
-        <option value="$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts" />
         <option value="$PROJECT_DIR$/src/pricklythistle/contactChecker/contract/contracts.d.ts" />
         <option value="$PROJECT_DIR$/typings/tsd.d.ts" />
         <option value="$PROJECT_DIR$/tsd.json" />
         <option value="$PROJECT_DIR$/libs/libs.d.ts" />
         <option value="$PROJECT_DIR$/libs/rx.async-lite/rx.async-lite.d.ts" />
+        <option value="$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts" />
         <option value="$PROJECT_DIR$/src/pricklythistle/contactChecker/service/mailServerService.ts" />
       </list>
     </option>
@@ -319,6 +338,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contactList.ts" />
+              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -866,12 +889,12 @@
       <option name="number" value="Default" />
       <updated>1452960424537</updated>
       <workItem from="1452960427300" duration="4629000" />
-      <workItem from="1453022328103" duration="10944000" />
+      <workItem from="1453022328103" duration="12395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15573000" />
+    <option name="totallyTimeSpent" value="17024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
@@ -920,7 +943,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1009,22 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactList.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/contract/contracts.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1059,18 +1066,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts">
+    <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactList.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typings/rx/rx-lite.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="308" column="8" selection-start-line="308" selection-start-column="8" selection-end-line="308" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/service/mailServerService.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43650794">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <marker date="1453039282507" expanded="true" signature="1220:1377" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pricklythistle/contactChecker/model/contactChecker.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5555556">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>

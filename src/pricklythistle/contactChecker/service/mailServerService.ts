@@ -11,17 +11,19 @@ export class MailServerService implements contracts.IMailServerService{
     //  Public Functions
 
     lookupMailServers( email: contracts.IHasEmail): Rx.Observable<contracts.IHasMailServer> {
-        console.log( `MailServerService looking up mail servers for ${email.email} email addresses` );
+        //console.log( `MailServerService looking up mail servers for ${email.email} email addresses` );
 
         const domain: string = email.email.substr( email.email.indexOf( "@" ) + 1 );
 
-        console.log( `Domain for ${email.email}: ${domain}` );
+        //console.log( `Domain for ${email.email}: ${domain}` );
 
         return Rx.Observable.fromNodeCallback<string,Array<contracts.IMailExchange>,contracts.IHasMailServer>(
             dns.resolveMx,
             this,
             (results) => this.updateHasEmail( email, results )
-        )(domain);
+        )(domain).do(() =>{}, (error) => {
+            console.log( `Error getting mail server for domain ${domain} on email ${email.email}: ${error}` )
+        });
     }
 
     private updateHasEmail( email: contracts.IHasEmail, mailServerResults: contracts.IMailExchange[] ) : contracts.IHasMailServer {
