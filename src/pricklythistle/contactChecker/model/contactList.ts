@@ -1,11 +1,7 @@
 
 import fs = require( "fs" );
 import csv = require('csv');
-
-export interface IContact {
-    email: string;
-    source: any;
-}
+import contracts = require( '../contract/contracts.d.ts' );
 
 export class ContactList {
 
@@ -25,12 +21,12 @@ export class ContactList {
     //  Private variables
 
     private _emailColumn: string;
-    private _contacts: Array<IContact>;
+    private _contacts: Array<contracts.IContact>;
     private _callback: (err?) => void;
 
     //  Properties
 
-    get contacts() : Array<IContact> {
+    get contacts() : Array<contracts.IContact> {
         return this._contacts ? this._contacts.slice() : null;
     }
 

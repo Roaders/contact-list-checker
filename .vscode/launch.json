@@ -7,7 +7,7 @@
 			"request": "launch",
 			"program": "app.js",
 			"stopOnEntry": false,
-			"args": [ "E:/dev/samples/google.csv" ],
+			"args": [ "E-mail 1 - Value","E:/dev/samples/google.csv" ],
 			"cwd": ".",
 			"runtimeExecutable": null,
 			"runtimeArgs": [

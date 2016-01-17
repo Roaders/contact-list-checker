@@ -6,3 +6,6 @@ app.js
 src/pricklythistle/contactChecker/*.js.map
 contact-list-checker.iml
 app.js.map
+src/pricklythistle/contactChecker/service/*.js
+src/pricklythistle/contactChecker/model/*.js
+src/pricklythistle/contactChecker/util/*.js

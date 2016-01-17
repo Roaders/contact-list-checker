@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Roaders/contact-list-checker",
   "dependencies": {
     "csv": "^0.4.6",
+    "rx": "4.0.7",
     "typescript": "^1.6.2"
   }
 }

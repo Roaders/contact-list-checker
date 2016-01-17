@@ -9,6 +9,7 @@
     "files": [
         "./app.ts",
         "./typings/tsd.d.ts",
-        "./libs/libs.d.ts"
+        "./libs/libs.d.ts",
+        "./src/pricklythistle/contactChecker/contract/contracts.d.ts"
     ]
 }
