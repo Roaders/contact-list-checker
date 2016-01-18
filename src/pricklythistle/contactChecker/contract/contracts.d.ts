@@ -16,6 +16,12 @@ export interface IHasMailServer extends IHasEmail {
     mailServers: Array<string>
 }
 
+
+export interface IMxLookupError {
+    error: string,
+    hasEmail: IHasEmail
+}
+
 export interface IMailServerService {
     lookupMailServers( contact: IHasEmail ): RX.Observable<IHasMailServer>;
 }

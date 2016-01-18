@@ -5,6 +5,7 @@
 import contracts = require( '../contract/contracts.d.ts' );
 import Rx = require( 'rx' );
 import dns = require( 'dns' );
+import {IHasEmail} from "../contract/contracts";
 
 export class MailServerService implements contracts.IMailServerService{
 
@@ -18,16 +19,23 @@ export class MailServerService implements contracts.IMailServerService{
         //console.log( `Domain for ${email.email}: ${domain}` );
 
         return Rx.Observable.fromNodeCallback<string,Array<contracts.IMailExchange>,contracts.IHasMailServer>(
-            dns.resolveMx,
+            this.makeMxRequest,
             this,
             (results) => this.updateHasEmail( email, results )
-        )(domain).do(
+        )(domain)
+            .catch( (error) => {
+                //console.log( `Error getting mail server for domain ${domain} on email ${email.email}: ${error}` )
+                return Rx.Observable.throw<contracts.IHasMailServer>( <contracts.IMxLookupError>{ error: error, hasEmail: email } );
+            } )
+            .do(
             (hasMailServer) =>{
                 //console.log( `mail servers: ${hasMailServer.mailServers}` )
-            },
-            (error) => {
-                console.log( `Error getting mail server for domain ${domain} on email ${email.email}: ${error}` )
-        });
+            });
+    }
+
+    private makeMxRequest( domain: string, callback: (err, addresses: string[]) => void ) : void {
+        //console.log(`resolveMx for domain ${domain}`);
+        dns.resolveMx(domain, callback);
     }
 
     private updateHasEmail( email: contracts.IHasEmail, mailServerResults: contracts.IMailExchange[] ) : contracts.IHasMailServer {
