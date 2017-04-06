@@ -1,4 +1,6 @@
 # Contact List Checker
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Roaders/contact-list-checker.svg)](https://greenkeeper.io/)
 A Node.js / Typescript app for checking all the email addresses in a contact list
 
 ## Compilation
